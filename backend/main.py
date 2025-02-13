@@ -6,10 +6,10 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.inspection import inspect
 import openai
 
-openai.api_key =""
+openai.api_key ="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"
 
 
-DATABASE_URL = ""
+DATABASE_URL = "postgresql://postgres:postgres@localhost/gen_ai_test_data"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()

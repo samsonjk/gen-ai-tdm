@@ -5,7 +5,7 @@ import { LayoutDashboard, Database, Settings, LogOut } from "lucide-react";
 import { JSX, useState } from "react";
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <aside className={`h-screen bg-gray-900 text-white flex flex-col transition-all duration-300 ${isOpen ? "w-64" : "w-20"}`}>
